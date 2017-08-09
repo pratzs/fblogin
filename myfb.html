@@ -7,7 +7,9 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
+	
 	<script>
+		
 		// initialize and setup facebook js sdk
 		window.fbAsyncInit = function() {
 		    FB.init({
@@ -58,7 +60,7 @@
 			});
 		}
 	</script>
-
+<?php header( 'Location: /index.html' ) ;  ?>
 	<div id="status"></div>
 	<button onclick="getInfo()">Get Info</button>
 	<button onclick="post()">Post</button>
