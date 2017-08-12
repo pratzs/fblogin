@@ -14,9 +14,10 @@
 		// initialize and setup facebook js sdk
 		window.fbAsyncInit = function() {
 		    FB.init({
-		      appId      : '359641061119947',
+		      appId      : '1380252108677633',
+	              cookie     : true,
 		      xfbml      : true,
-		      version    : 'v2.5'
+		      version    : 'v2.8'
 		    });
 		    FB.getLoginStatus(function(response) {
 		    	if (response.status === 'connected') {
