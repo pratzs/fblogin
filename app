@@ -8,7 +8,7 @@ class GiftBasket < Sinatra::Base
   attr_reader :tokens
   API_KEY = ENV['9c3dd4d7a447424c3d35039efd467d8e']
   API_SECRET = ENV['596c11c1fda61487cec8b50f369c2805']
-  APP_URL = "https://vast-headland-68584.herokuapp.com/index.html/giftbasket/auth"
+  APP_URL = "https://vast-headland-68584.herokuapp.com/index.html/"
 
   def initialize
     @tokens = {}
@@ -20,8 +20,8 @@ class GiftBasket < Sinatra::Base
     scopes = "read_orders,read_products,write_products"
 
     # construct the installation URL and redirect the merchant
-    install_url = "http://#{shop}/admin/oauth/authorize?client_id=#{API_KEY}"\
-                "&scope=#{scopes}&redirect_uri=https://#{APP_URL}/giftbasket/auth"
+    install_url = "http://#{shop}/admin/oauth/authorize?client_id=#{9c3dd4d7a447424c3d35039efd467d8e}"\
+                "&scope=#{scopes}&redirect_uri=https://#{https://vast-headland-68584.herokuapp.com/index.html}/giftbasket/auth"
 
     # redirect to the install_url
     redirect install_url
