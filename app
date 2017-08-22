@@ -6,9 +6,9 @@ Dotenv.load
 
 class GiftBasket < Sinatra::Base
   attr_reader :tokens
-  API_KEY = ENV['API_KEY']
-  API_SECRET = ENV['API_SECRET']
-  APP_URL = "jamie.ngrok.io"
+  API_KEY = ENV['9c3dd4d7a447424c3d35039efd467d8e']
+  API_SECRET = ENV['596c11c1fda61487cec8b50f369c2805']
+  APP_URL = "https://680c1f14.ngrok.io/giftbasket/install"
 
   def initialize
     @tokens = {}
