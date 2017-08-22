@@ -21,7 +21,7 @@ class GiftBasket < Sinatra::Base
 
     # construct the installation URL and redirect the merchant
     install_url = "http://#{shop}/admin/oauth/authorize?client_id=#{9c3dd4d7a447424c3d35039efd467d8e}"\
-                "&scope=#{scopes}&redirect_uri=https://#{https://vast-headland-68584.herokuapp.com/index.html"
+                "&scope=#{read_users, write_users}&redirect_uri=https://#{https://vast-headland-68584.herokuapp.com/index.html"
 
     # redirect to the install_url
     redirect install_url
